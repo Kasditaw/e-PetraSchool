@@ -1,0 +1,42 @@
+# =============================================================================
+# e-PetraSchool1 — .gitignore
+# =============================================================================
+
+# ── Environment & Credentials (JANGAN commit) ────────────────────────────────
+config/env.php
+
+# ── Scratch / Debug Scripts ──────────────────────────────────────────────────
+scratch/
+
+# ── User Uploads (data production) ───────────────────────────────────────────
+assets/uploads/guru/
+assets/uploads/inventaris/
+assets/uploads/foto_profil/
+
+# ── Backup Files ─────────────────────────────────────────────────────────────
+*.bak
+*.sql.bak
+login_backup.php
+
+# ── Development Utilities (berbahaya di production) ──────────────────────────
+register_users.php
+scratch_guru_mapel.php
+
+# ── Logs ─────────────────────────────────────────────────────────────────────
+*.log
+error_log
+
+# ── OS Generated Files ──────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+*~
+
+# ── IDE / Editor ─────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.agents/
